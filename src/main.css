@@ -1,0 +1,66 @@
+:root {
+  --color-bg: #f4f0e8;
+  --color-surface: #fffef9;
+  --color-surface-muted: #faf7f0;
+  --color-media: #f0ebe3;
+  --color-border: #e5dfd4;
+  --color-border-strong: #d4ccc0;
+  --color-text: #3a3632;
+  --color-text-muted: #6b6560;
+  --color-text-subtle: #8a837a;
+  --color-accent: #4a433c;
+  --color-accent-hover: #5e564d;
+  --color-on-accent: #fffef9;
+  --shadow-card: 0 4px 20px rgba(58, 54, 50, 0.06);
+  --shadow-card-hover: 0 8px 28px rgba(58, 54, 50, 0.09);
+  --overlay-scrim: rgba(58, 54, 50, 0.42);
+}
+
+html {
+  background-color: var(--color-bg);
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+main a {
+  color: var(--color-accent);
+  text-underline-offset: 2px;
+}
+
+main a:hover {
+  color: var(--color-accent-hover);
+}
+
+main a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

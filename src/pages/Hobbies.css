@@ -1,0 +1,11 @@
+.hobbies-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}

@@ -1,0 +1,96 @@
+.project-demo-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--overlay-scrim);
+}
+
+.project-demo-dialog {
+  display: flex;
+  flex-direction: column;
+  width: min(960px, 100%);
+  max-height: min(90vh, 900px);
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card-hover);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.project-demo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.project-demo-heading {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.project-demo-close {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-text-muted);
+}
+
+.project-demo-close:hover {
+  background-color: var(--color-surface-muted);
+  color: var(--color-text);
+}
+
+.project-demo-close:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.project-demo-frame-wrap {
+  position: relative;
+  flex: 1;
+  min-height: min(70vh, 640px);
+  background-color: var(--color-media);
+}
+
+.project-demo-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: var(--color-media);
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.project-demo-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: min(70vh, 640px);
+  border: 0;
+}
+
+.project-demo-fallback {
+  margin: 0;
+  padding: 2rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}

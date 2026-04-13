@@ -1,9 +1,13 @@
-import reactSvg from "../assets/react.svg";
+import susPic from "../assets/Sustainability Chabot Pic.png";
+import tennisPic from "../assets/tennis yolo thumnail.png";
 
 export const projects = [
   {
     id: "project-one",
     title: "AI Sustainability Chatbot",
+    createdLabel: "2025",
+    summary:
+      "A capstone chatbot that encourages college students to take sustainable action, built as a Hugging Face Space.",
     description: `
 For my DCC capstone project, I wanted to combine my current 
 knowledge in computer science with an issue that I deeply care about.
@@ -16,12 +20,26 @@ After all, almost everyone in college is using AI chatbots to help
 with their schoolwork, which is why I believe that a sustainability 
 geared chatbot can help students as well.
     `,
-    image: reactSvg,
-    link: "https://huggingface.co/spaces/ethanyen30/UMD-Sustainability-Chatbot",
+    image: susPic,
+    links: [
+      {
+        label: "Project Repo",
+        url: "https://github.com/ethanyen30/UMD-Sustainability-Chatbot",
+        type: "external",
+      },
+      {
+        label: "Try Demo",
+        url: "https://ethanyen30-umd-sustainability-chatbot.hf.space",
+        type: "demo",
+      },
+    ],
   },
   {
     id: "project-two",
     title: "Tennis Ball Tracker",
+    createdLabel: "2025",
+    summary:
+      "Real-time tennis ball tracking with YOLOv5 on standard video—toward accessible performance analysis and coaching.",
     description: `
 This project presents a real-time tennis ball tracking system 
 using YOLOv5 and a few variants. By training a custom object 
@@ -41,7 +59,18 @@ focusing on speed, precision, and affordability. This work
 demonstrates the feasibility of real-time ball tracking using
 video and open-source models and tools.
     `,
-    image: reactSvg,
-    link: "https://www.youtube.com/watch?v=v1ZrOg5EmTY",
+    image: tennisPic,
+    links: [
+      {
+        label: "YouTube",
+        url: "https://www.youtube.com/watch?v=v1ZrOg5EmTY",
+        type: "external",
+      },
+      {
+        label: "Watch Demo",
+        url: "https://www.youtube.com/embed/v1ZrOg5EmTY",
+        type: "demo",
+      },
+    ],
   },
 ];
