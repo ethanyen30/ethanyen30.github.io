@@ -122,6 +122,30 @@
   outline-offset: 2px;
 }
 
+/* Phones / narrow viewports: don’t force a wide 16:10 crop on portrait photos */
+@media (max-width: 859px) {
+  .hobby-card-media {
+    aspect-ratio: unset;
+    min-height: 10.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hobby-card-image {
+    width: 100%;
+    height: auto;
+    max-height: min(26rem, 72vh);
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .hobby-card-placeholder {
+    min-height: 10.5rem;
+    width: 100%;
+  }
+}
+
 @media (min-width: 860px) {
   .hobby-card {
     display: grid;
@@ -132,6 +156,18 @@
   .hobby-card-media {
     aspect-ratio: auto;
     min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hobby-card-image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: min(100%, 28rem);
+    object-fit: contain;
+    object-position: center;
   }
 
   .hobby-card-body {
